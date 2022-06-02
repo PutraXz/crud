@@ -46,7 +46,7 @@ class SubjectController extends Controller
         Subject::create($request->all());
 
         return redirect()->route('subjects.index')
-                        ->with('success','Subject created successfully.');
+                        ->with('success','Mata pelajaran berhasil ditambahkan.');
     }
 
     /**
@@ -88,7 +88,7 @@ class SubjectController extends Controller
         $subject->update($request->all());
 
         return redirect()->route('subjects.index')
-                        ->with('success','Subject updated successfully');
+                        ->with('success','Mata pelajaran berhasil diubah.');
     }
 
     /**
@@ -102,6 +102,6 @@ class SubjectController extends Controller
         $subject->delete();
 
         return redirect()->route('subjects.index')
-                        ->with('success','Subject deleted successfully');
+                        ->with('success','Mata pelajaran berhasil dihapus.');
     }
 }
